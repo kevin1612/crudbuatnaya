@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".AkunActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PEMESANAN"
+            android:textSize="50dp"
+            android:layout_marginLeft="40dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:text="SILAHKAN MEMILIH MENU DI BAWAH : "
+            android:textAlignment="center"
+            android:textSize="18dp" />
+
+        <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+            android:id="@+id/masuk"
+            android:layout_width="350dp"
+            android:layout_height="173dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="118dp"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:background="@mipmap/ic_store"
+                    android:padding="10dp"
+                    android:tint="#FFF"
+                    tools:ignore="VectorDrawableCompat" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="10dp"
+                    android:background="@color/silver" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Input Pesananmu"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+        </com.google.android.material.circularreveal.cardview.CircularRevealCardView>>
+
+
+        <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+            android:id="@+id/find"
+            android:layout_width="350dp"
+            android:layout_height="173dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="118dp"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:background="@color/biru"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_search"
+                    android:tint="#FFF"
+                    tools:ignore="VectorDrawableCompat" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="10dp"
+                    android:background="@color/silver" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Cari Pesananmu"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+        </com.google.android.material.circularreveal.cardview.CircularRevealCardView>>
+
+
+
+    </LinearLayout>
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#e92030"
+        app:menu="@menu/bottom2"
+        app:itemTextColor="@drawable/col_state"
+        app:itemIconTint="@drawable/col_state"
+        >
+
+
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,19 @@
+{
+  "name": "uasdealermotor",
+  "version": "1.0.0",
+  "description": "Projek UAS dealer Motor 17411031,17411035,17411064",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Nawa Haya,Kevin Hartanto,Feby Pilawa",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.8.3"
+  }
+}

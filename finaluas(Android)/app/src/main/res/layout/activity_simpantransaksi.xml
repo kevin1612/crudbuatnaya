@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="800dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".LihatKatalog">
+
+    <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+        android:layout_width="match_parent"
+        android:layout_height="586dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        app:cardCornerRadius="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="627dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="BUAT PEMESANAN"
+                android:textAlignment="center"
+                android:textSize="30dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Kode Motor*"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/edtkodemotor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Kode Motor"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Tanggal Pemesanan"
+                android:textSize="15dp" />
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Jumlah unit**"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/edtjb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Username"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/edtusername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ketik Username Anda"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/btnsimpan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/hijau"
+                android:text="Simpan Pemesanan" />
+
+            <Button
+                android:id="@+id/btnmundur"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/silver"
+                android:text="Kembali" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="* (Kode bisa dilihat di menu katalog)"
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="** (1 transaksi hanya bisa pesan 1 motor)"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+    </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="20dp"
+        android:background="#e92030"
+        app:itemIconTint="@drawable/col_state"
+        app:itemTextColor="@drawable/col_state"
+        app:menu="@menu/bottom1">
+
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</LinearLayout>

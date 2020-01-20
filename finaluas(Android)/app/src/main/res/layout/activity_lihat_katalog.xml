@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="800dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".LihatKatalog">
+
+    <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+        android:layout_width="match_parent"
+        android:layout_height="575dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        app:cardCornerRadius="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Detail Motor"
+                android:textSize="30dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Kode Motor"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/edtkodemotor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kode Motor"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Nama Motor"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/edtnamamotor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nama Motor"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Jenis Motor"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/edtjenismotor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jenis Motor"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Warna"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/edtwarna"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Warna"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Jumlah unit"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/edtstok"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Stok"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="harga"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/edtharga"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Harga"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/btnkembali"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/silver"
+                android:text="Kembali" />
+
+        </LinearLayout>
+    </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="20dp"
+        android:background="#e92030"
+        app:itemIconTint="@drawable/col_state"
+        app:itemTextColor="@drawable/col_state"
+        app:menu="@menu/bottom1">
+
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</LinearLayout>

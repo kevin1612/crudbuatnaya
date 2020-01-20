@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="800dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".CaripesanActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DAFTAR PEMESANAN"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        />
+
+    <ListView
+        android:id="@+id/array_list1"
+        android:layout_width="match_parent"
+        android:layout_height="539dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:divider="@null"
+        android:dividerHeight="5.0sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="20dp"
+        android:background="#e92030"
+        app:itemIconTint="@drawable/col_state"
+        app:itemTextColor="@drawable/col_state"
+        app:menu="@menu/bottom2">
+
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</LinearLayout>
